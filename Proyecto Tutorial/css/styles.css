@@ -1,127 +1,177 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  @keyframes example {
+    from {background-color: #BC8F8F;}
+    to {background-color: #D2B48C;}
+  }
+  
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
+  
 body {
-  font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 .wrapper {
-    width: 100vw;
-    height: 100vh;
-    background-color:#151515;
-    color: #fff;
+      width: 100vw;
+      height: 100vh;
+      background-color:#D2B48C;
+      color: #fff;
+      animation-name: example;
+      animation-duration: 2s;
+
+      
 }
 .navbar{
-    display: flex;
-    justify-content: space-between;
-    padding: 2em;
+      display: flex;
+      justify-content: space-between;
+      padding: 2em;
 }
 .brand{
-    margin-top: -7px;
+      margin-top: -7px;
 }
 .brand span {
-    color:#ff00bf ;
+      color:#BC8F8F ;
 }
 .menu {
-    display: flex;
-    width: 50%;
-    justify-content: space-around;
+      display: flex;
+      width: 50%;
+      justify-content: space-around;
 }
 .menu li {
-    list-style: none;
+      list-style: none;
 }
 .menu a {
-    color:#ffffff;
-    text-decoration: none;
-    padding: 10px 20px;
+      color:#ffffff;
+      text-decoration: none;
+      padding: 10px 20px;
 }
 .menu a:hover {
-    background-color: #cc00ff ;
-    transition: ease-in .4s;
-    color:#000000;
+      background-color: #BC8F8F ;
+      transition: ease-in .4s;
+      color:#000000;
 }
 .menu .active {
-    color: #ea00ff;
+      color: #BC8F8F;
 }
 .menu li a:hover{
-    color:#010047;
+      color:#010047;
 }
-
+  
 .main{
-    margin: 0 auto;
-    width: 80vw;
-    height: 80vh;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    align-items: center;
-    gap: 2em;
+      margin: 0 auto;
+      width: 80vw;
+      height: 80vh;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      align-items: center;
+      gap: 2em;
 }
 h1{
-    font-size: 3em;
+      font-size: 3em;
 }
 .info-content span{
-    color:#c300ff ;
+      color:#BC8F8F ;
 }
 .download-cv{
-    padding: 10px 20px;
-    background-color: #c300ff ;
-    border: none;
-    border-radius: 20px;
-    margin-top: 10px;
-    cursor: pointer;
-    -webkit-box-shadow: 1px 3px 11px -5pz rgba(102,231,200,0.69);
-    -moz-box-shadow: 1px 3px 11px -5pz rgba(102,231,200,0.69);
-    box-shadow: 1px 3px 11px -5pz rgba(102,231,200,0.69);
+      padding: 10px 20px;
+      background-color: #BC8F8F ;
+      border: none;
+      border-radius: 20px;
+      margin-top: 10px;
+      cursor: pointer;
+      -webkit-box-shadow: 1px 3px 11px -5pz rgba(102,231,200,0.69);
+      -moz-box-shadow: 1px 3px 11px -5pz rgba(102,231,200,0.69);
+      box-shadow: 1px 3px 11px -5pz rgba(102,231,200,0.69);
 }
 .download-cv:hover{
-    background-color: #756868;
-    box-shadow: none;
+      background-color: #756868;
+      box-shadow: none;
 }
 .main img{
-    width: 350px;
-    border: 7px solid #ae01d1 ;
-    border-radius: 30px;
-    height: 400px; 
-    z-index: 1;
+      width: 350px;
+      border: 7px solid #BC8F8F ;
+      border-radius: 30px;
+      height: 400px; 
+      z-index: 1;
 }
-
+  
 .about {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    width: 100vw;
-    align-items: center ;
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      width: 100vw;
+      align-items: center ;
+      animation-name: slidein;
+      animation-duration: 3s;
 }
 .about img{
-    width: 107%;
-    grid-column: 1/5;
+      width: 107%;
+      grid-column: 1/5;
 }
 .about-info{
-    grid-column: 5/10;
-    padding: 3em;
+      grid-column: 5/10;
+      padding: 3em;
 }
 .about-info h2{
-    font-size: 2em;
-    color:#151515;
+      font-size: 2em;
+      color:#D2B48C;
 }
 .divider{
-    height: 4px;
-    width: 60px;
-    background-color: #d400ff ;
-    margin-top: 5px;
-    margin-bottom: 2em;
-    color:#151515;
+      height: 4px;
+      width: 60px;
+      background-color: #BC8F8F ;
+      margin-top: 5px;
+      margin-bottom: 2em;
+      color:#D2B48C;
 }
-.about p {
-    margin-bottom: 1em;
+.footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 200px;
+      padding: 2em;
+      background-color: #BC8F8F ;
 }
+    
+.footer-content h2 {
+      font-size: 3em;
+}
+    
+.footer-content h5 {
+      font-size: 1.5em;
+      text-align: center;
+}
+    
+.sotial-networks {
+      display: flex;
+      justify-content: space-evenly;
+      width: 300px;
+      margin-top: 1em;
+}
+    
+.sotial-networks i {
+      font-size: 1.5em;
+}
+
+
 .Portafolio,
 .contact-section{
     width: 100vw;
-    background-color:#151515;
+    background-color:#D2B48C;
     color:#fff;
 }
 .Portafolio-headings{
@@ -145,7 +195,7 @@ h1{
 }
 .card{
     width: 300px;
-    background-color: #2b3058;
+    background-color: #a68069;
     margin: 1em;
 }
 .card_img{
@@ -175,7 +225,7 @@ h1{
 }
 .card .project-details a { 
     text-decoration: none;
-    color: #151515;
+    color: #000000;
     text-transform: uppercase;
 }
 .proyect-details-content{
@@ -193,6 +243,7 @@ h1{
     text-decoration: none;
     color:#151515;
 }
+
 
 .contact-section {
     padding: 3em;
@@ -239,7 +290,7 @@ h1{
     border-radius: 20px;
     border: none;
     text-transform: uppercase;
-    background-color: #cc00ff ;
+    background-color: #BC8F8F ;
 }
   
   
@@ -277,7 +328,7 @@ h1{
 .portfolio,
 .contact-section {
     width: 100vw;
-    background-color:#151515 ;
+    background-color:#D2B48C ;
     color: #fff;
 }
   
@@ -307,7 +358,7 @@ h1{
   
 .card {
     width: 300px;
-    background-color: #424949 ;
+    background-color: #a68069;
     margin: 1em;
 }
   
@@ -391,7 +442,7 @@ h1{
     border-radius: 20px;
     border: none;
     text-transform: uppercase;
-    background-color: #ea00ff ;
+    background-color: #BC8F8F ;
 }
 .footer {
     display: flex;
@@ -401,7 +452,7 @@ h1{
     width: 100vw;
     height: 200px;
     padding: 2em;
-    background-color: #e100ff ;
+    background-color: #BC8F8F ;
 }
   
 .footer-content h2 {
